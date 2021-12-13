@@ -1,0 +1,46 @@
+body {
+   padding: 0 200px;
+   padding-top: 40px;
+   background: #eee;
+}
+
+.container {
+   width: 656px;
+   display: flex;
+   flex-flow: row wrap;
+   margin: 0 auto;
+}
+
+.kate {
+   width: 80px;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #ccc;
+   background: #F0D9B5;
+}
+
+.kate:hover {
+   border: 1px solid #735018;
+}
+
+.qora {
+   background: #B58863;
+}
+
+.figures {
+   position: absolute;
+   top: 50%;
+   right: 5%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   align-items: center;
+   flex-flow: column;
+}
+
+.figura {
+   font-size: 48px;
+   /* margin-bottom: 14px; */
+   color: #54361d;
+}
