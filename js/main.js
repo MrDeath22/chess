@@ -103,17 +103,23 @@ function createDesk (e) {
 figura.forEach(item => {
    item.addEventListener('click', () => {
       let kate = document.querySelectorAll('.kate');  
-      item.style.border = '1px solid #222'
 
       kate.forEach(item2 => {
-         // item2.style.background = '#22afb626';
 
          item2.addEventListener('click', (e) => {
-            if (item.value = 3) {
-               item2.innerHTML += '<div class="figura tora"><i class="fas fa-chess-rook"></i></div>';
+
+            if ((item.classList[1]) == 'tora') {
+               item2.innerHTML = '<div class="figura tora"><i class="fas fa-chess-rook"></i></div>';
             }
-            item2.innerHTML += '';
-            console.log(item.value);
+            if ((item.classList[1]) == 'ferz') {
+               item2.innerHTML = '<div class="figura ferz"><i class="fas fa-chess-queen"></i></div>';
+            }
+            if ((item.classList[1]) == 'slon') {
+               item2.innerHTML = '<div class="figura slon"><i class="fas fa-chess-bishop"></i></div>';
+            }
+            if ((item.classList[1]) == 'ot') {
+               item2.innerHTML = '<div class="figura ot"><i class="fas fa-chess-knight"></i></div>';
+            }  
          })
       })
    })

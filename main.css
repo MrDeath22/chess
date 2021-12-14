@@ -44,3 +44,7 @@ body {
    /* margin-bottom: 14px; */
    color: #54361d;
 }
+
+.active-b {
+   border: 1px solid #222;
+}
